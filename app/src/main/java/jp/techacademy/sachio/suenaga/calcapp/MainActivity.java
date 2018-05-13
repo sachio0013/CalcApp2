@@ -46,9 +46,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 result = i - i2;
             } else if (v.getId() == R.id.kakeru) {
                 result = i * i2;
-            } else if (v.getId() == R.id.waru && i !=0 && i2 !=0) {
+            } else if (v.getId() == R.id.waru && i2 !=0) {
                 result = i / i2;
-            } else if (v.getId() == R.id.waru && (i == 0 || i2 == 0)) {
+            } else if (v.getId() == R.id.waru && i2 == 0) {
                 Toast tt = Toast.makeText(this, "0以外の数字を入力してください！", Toast.LENGTH_LONG);
                 tt.show();
             }
